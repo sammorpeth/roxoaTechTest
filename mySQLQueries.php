@@ -19,9 +19,9 @@ $query = 'SELECT P.firstName, P.lastName, D.name
 // table on the 'right'
 
 $query = 'SELECT P.firstName, P.lastName, D.name
-            FROM department AS P
-            RIGHT JOIN personnel AS D
-            ON p.id = d.id';
+          FROM department AS P
+          RIGHT JOIN personnel AS D
+          ON p.id = d.id';
 
 // A right join is essentially the opposite of a left join. It would return all of the records in the right table, and return NULL for anything
 // that did not match on the left. 

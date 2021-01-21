@@ -1,5 +1,10 @@
 <?php
 
+// Due to the limitations on the question I decided to research how this would be possible and read about recursion. I'd heard about
+// recursion before, but never tried writing anything with it and I found it really interesting, so thanks! 
+// I found the function below and modified it slightly so I could understand it better I have also written notes in an attempt to understand the process better. 
+// Underneath that is a function I have written myself to reverse an array in order to understand the concept and solidify my understanding.
+
 function reverseStr($str) 
 { 
     // Sets the base case

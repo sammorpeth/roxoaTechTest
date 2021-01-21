@@ -14,41 +14,13 @@ ul {
 
 li {
   list-style: none;
-  font-size: 1.2em;
-  margin-top: 2em;
+  
 }
+
 
 h1 {
   padding-top: .5em;
   font-size: 3em;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffffffb0;
-  text-decoration: underline;
-}
-
-button {
-  background-color: #ffffff;
-  border-color: #ADF7B6 !important;
-  padding: 1em;
-  border-radius: 1em;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-button:active {
-  transform: scale(1.05); 
-}
-
-button:focus {
-  outline: none;
-
 }
 
 img {
@@ -58,20 +30,88 @@ img {
 
 }
 
-button {
-  border: none;
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
+button {
+  padding: .5em .75em .5em .75em ;
+  border-radius: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  color: #000000;
+  color: #000000;
+  /* background-color: #79aedca2;; */
+  border: 2px solid #3c80bb;
+}
+
+footer {
+  padding: 1em;
+  -webkit-box-shadow: 0px -2px 2px #a9a7a7 rgba(169,167,167,0.68);
+  -moz-box-shadow: 0px -2px 2px -1px rgba(169,167,167,0.68);
+  box-shadow: 0px -2px 2px -1px rgba(169,167,167,0.68);
+  background-color: #79ADDC;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: .75em;
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer li a {
+  color: #000000;
+}
+
+
+
+/* ============== PSUEDO CLASSES ============ */
+
+a:hover {
+  color: #ffffffb0;
+  text-decoration: underline;
+}
+
+button:active {
+  transform: scale(1.05); 
+}
+
+button:focus {
+  outline: none;
+}
+
+footer li a:hover {
+  color: #242424;
+}
+
+
+
 /* ===================================== */
-/* ========== CLASS STYLING ========== */
+/* ========= CLASS/ID STYLING ========== */
 /* ===================================== */
 
-.container {
+/* ============== CONTAINERS ============ */
+
+#mobile-navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #79ADDC;
+}
+
+#container {
   display: grid;
   grid-template-columns: 1.5fr 10fr;
 }
 
-.wrapper {
+#wrapper {
   width: 65%; 
   margin: 0 auto;
   background-color: #ffffff;
@@ -90,52 +130,111 @@ button {
   padding: 1em;
 }
 
-.banner {
+#banner {
   text-align: center;
   padding-bottom: 2em;
   background-color: #79ADDC;
   color: #ffffff;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.sidebar {
-  background-color: #79ADDC;
-
-  /* border: 1px solid black; */
-  padding: 0em 1em 0em 1em;
  
 }
 
-.main-content {
+#sidebar {
+  background-color: #79ADDC;
+  /* border: 1px solid black; */
+  padding: 0em 1em 0em 1em;
+  height: 100vh;
+}
+
+#main-content {
   /* background-color: #79ADDC; */
   margin-top: 2em;
   /* border: 1px solid black; */
   padding: .25em 0 1em 0;
- 
 
 }
+
+#sidebar ul li {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+  padding-bottom: .75em;
+  border-bottom: 1px solid #ffffff;
+}
+
+#mobile-navbar ul li {
+  font-size: 1.2em;
+}
+
+
+/* ============== ARTICLE STYLING ============ */
 
 .article {
   /* border: 1px solid black; */
   background-color: #ffffff;
   padding: 1em 1em 1em 1em;
   margin: 1em 1em 1em 1em;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
 }
 
+/* ============== MULTIPLE RULES ============ */
+
 img,
-.banner,
-.main-content,
+#banner,
+#mobile-navbar,
+#main-content,
 .article,
-.sidebar {
+#sidebar,
+footer {
   border-radius: 5px;
 }
 
 
-.sidebar,
-.wrapper {
+#sidebar,
+#wrapper {
   -webkit-box-shadow: -10px 0px 13px -7px #a9a7a7, 10px 0px 13px -7px #a9a7a7, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: -10px 0px 13px -7px #a9a7a7, 10px 0px 13px -7px #a9a7a7, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#banner,
+.article {
+  -webkit-box-shadow: 0px 10px 13px -7px #a9a7a7, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #a9a7a7, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+/* ===================================== */
+/* ========= CLASS/ID STYLING ========== */
+/* ===================================== */
+
+/* ========= MOBILE STYLING ============ */
+
+@media (max-width: 768px) {
+
+  img {
+    width: 80%;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #container {
+    grid-template-columns: 1fr;
+  }
+
+  #wrapper {
+    width: 80%;
+  }
+
+  #mobile-navbar {
+    flex-wrap: wrap;
+  }
+}
+
+/* ========= DESKTOP STYLING ============ */
+
+@media (min-width: 769px) {
+  #mobile-navbar {
+    display: none;
+  }
+
+
 }

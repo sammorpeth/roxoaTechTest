@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cooking at Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="sidebar">
+<div id="container">
+  <!-- Desktop sidebar -->
+
+  <div id="sidebar">
     <ul>
       <li><a href="">Articles</a></li>
       <li><a href="">News</a></li>
@@ -19,40 +21,82 @@
     </ul>
   </div>
 
-  <div class="wrapper">
+  <div id="wrapper">
 
-    <div class="banner">
+    <div id="banner">
       <h1>Cooking At Home</h1>
       <span>Welcome home...</span>
     </div>
 
-    <div class="main-content">
+    <!-- Mobile nav list -->
+    <div id="mobile-navbar">
+      <li><a href="">Articles</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Recipes</a></li>
+      <li><a href="">Videos</a></li>
+      <li><a href="">Health</a></li>
+    </div>
+
+    <div id="main-content">
 
       <div class="article">
         <div class="contents">
-          <img src="imgs/garlic.jpg" alt="some alt description">
+          <img src="imgs/watermelon.jpg" alt="some alt description">
           <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, distinctio?</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam consequuntur 
             architecto expedita ducimus error iusto rem aperiam vitae, voluptate mollitia harum cumque!
             Ex, corporis ut! Debitis animi laudantium fugiat!</p>
-          <button>Read More</button>
+          <button class="btn-blue">Read More</button>
         </div>
       </div>
 
       <div class="article">
         <div class="contents">
-          <img src="imgs/hero-img.jpg" alt="some alt description">
+          
+          <img src="imgs/junk_food.jpg" alt="some alt description">
           <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, distinctio?</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam consequuntur 
             architecto expedita ducimus error iusto rem aperiam vitae, voluptate mollitia harum cumque!
             Ex, corporis ut! Debitis animi laudantium fugiat!</p>
-            <button>Read More</button>
+            <button class="btn-blue">Read More</button>
         </div>
       </div>
-    </div> <!-- end /banner-->
+    </div> <!-- end /main-content-->
+
+    <footer>
+      <p>Copyright © 2021 by John Doe. All rights reserved.</p>
+
+      <div>
+        <div>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Work For Us</a></li>
+          <li><a href="">Charity</a></li>
+          <li><a href="">Shipping</a></li>
+        </div>
+
+        <div>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Terms Of Service</a></li>
+          <li><a href="">Comment Policy</a></li>
+          <li><a href="">Author Guidelines</a></li>
+          <li><a href="">Returns</a></li>
+        </div>
+
+        <div>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Terms Of Service</a></li>
+          <li><a href="">Comment Policy</a></li>
+          <li><a href="">Author Guidelines</a></li>
+          <li><a href="">Returns</a></li>
+        </div>
+      </div>
+    </footer>
 
   </div>  <!-- end /wrapper-->
+ 
 </div>  <!-- end /container-->
+
 
 </body>
 </html>
